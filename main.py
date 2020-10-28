@@ -1,4 +1,4 @@
-import os, time, db_menu
+import os, time, db_menu, diva_tools.dex, diva_tools.diva_menu
 
 if os.name == 'nt':
     clear = lambda: os.system('cls')
@@ -32,14 +32,19 @@ def FRCheck():  # Simple first run check
 
 def main():
     FRCheck()
-
-    print("1. DB Tools")
+    print("??????????????????????????")
+    print("?1. DB Tools             ?")
+    print("?2. DIVA Conversion Tools?")
+    print("??????????????????????????")
 
     user_choice = input()
 
     if user_choice == "1":
         clear()
         db_menu.main_menu()
+    elif user_choice == "2":
+        clear()
+        diva_tools.diva_menu.menu()
 
 
 if __name__ == "__main__":

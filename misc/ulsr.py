@@ -1,5 +1,5 @@
-#ulsr, stands for Undefined Length String Reader
-#standard usage would simply be ulsr.reader('opened file name here'), it should read at the current offset)
+# ulsr, stands for Undefined Length String Reader
+# standard usage would simply be ulsr.reader('opened file name here'), it should read at the current offset)
 
 bytes = []
 strings = []
@@ -34,5 +34,6 @@ def Str_Read_At_Offset(Offset, File):
         
     File.seek(curr_pos)
     return string
-            
-        
+
+
+
