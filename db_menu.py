@@ -31,8 +31,6 @@ def mirai_menu():
         main.main()
 
     elif user_choice == "2":
-        root = tk.Tk()
-        root.withdraw()
 
         file_path = filedialog.askopenfilename(filetypes=(('AETDB BIN File', '*.bin'), ('AETDB JSON File', '*.json')))
         ext = os.path.splitext(file_path)
