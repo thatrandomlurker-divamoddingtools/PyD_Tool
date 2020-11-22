@@ -77,10 +77,10 @@ def TranslateMain(input, dir):
                     data[0] = 'ぴっくり２'
                     output.write(f'{data[0]},{data[1]},{data[2]}')
                 if expression == 42:
-                    data[0] = 'ウィンク２'
+                    data[0] = 'WINKG左'
                     output.write(f'{data[0]},{data[1]},{data[2]}')
                 if expression == 43:
-                    data[0] = 'ｳｨﾝｸ２右'
+                    data[0] = 'WINKG右'
                     output.write(f'{data[0]},{data[1]},{data[2]}')
                 if expression == 44:
                     data[0] = 'ウィンク'
