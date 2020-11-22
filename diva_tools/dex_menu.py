@@ -13,8 +13,6 @@ def menu():
         main.clear()
         diva_tools.dex.menu()
     if user_choice == "2":
-        root = tk.Tk()
-        root.withdraw()
 
         file_path = filedialog.askopenfilename(filetypes=[("MAIN VMD FILE", "*.vmd")])
         ext = os.path.splitext(file_path)
