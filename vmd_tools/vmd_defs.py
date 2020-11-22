@@ -851,7 +851,10 @@ def Read_Main_Morphs_to_EXP(dex_main_f, dex_eyes_f, json_file):
         highest = int(0)
         highest_index = int(0)
         for frame in diva_frames:
-            if frame["F"] > highest:
+            if frame["F"] == highest:
+                frame_sorter.pop(-1)
+                frame_sorter.append(frame)
+            elif frame["F"] > highest:
                 highest = frame["F"]
                 highest_index = int(diva_frames.index(frame))
         frame_sorter.append(diva_frames[highest_index])
