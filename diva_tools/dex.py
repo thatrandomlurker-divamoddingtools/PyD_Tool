@@ -106,6 +106,7 @@ def ReadDexJsonToVMD(f, p_dir):
         # Now let's finish this
         with open(transMainTempPath[0:-5] + '.vmd','wb') as vmdfile:
             vmdfile.write(b'Vocaloid Motion Data 0002\x00\x00\x00\x00\x00')
+            print(transMainTempPath)
             NameREd = re.findall('(?<=exp_)\w+', transMainTempPath)[0][0:-5]
             NameBytes = bytes(NameREd, 'Shift-JIS')
             if len(NameBytes) <= 20:
